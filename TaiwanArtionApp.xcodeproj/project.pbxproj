@@ -7,25 +7,137 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56092EC0312BB3CD89DBB5B9 /* Pods_TaiwanArtionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B1244207B5A59DCC7FA72 /* Pods_TaiwanArtionApp.framework */; };
 		626C31B128A48F7F005A3190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31B028A48F7F005A3190 /* AppDelegate.swift */; };
 		626C31B328A48F7F005A3190 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31B228A48F7F005A3190 /* SceneDelegate.swift */; };
-		626C31B528A48F7F005A3190 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31B428A48F7F005A3190 /* ViewController.swift */; };
-		626C31B828A48F7F005A3190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626C31B628A48F7F005A3190 /* Main.storyboard */; };
 		626C31BB28A48F7F005A3190 /* TaiwanArtionApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 626C31B928A48F7F005A3190 /* TaiwanArtionApp.xcdatamodeld */; };
 		626C31BD28A48F81005A3190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626C31BC28A48F81005A3190 /* Assets.xcassets */; };
 		626C31C028A48F81005A3190 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626C31BE28A48F81005A3190 /* LaunchScreen.storyboard */; };
+		626C31C928A49101005A3190 /* FindExhibitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31C828A49101005A3190 /* FindExhibitionViewController.swift */; };
+		626C31CE28A49252005A3190 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31CD28A49252005A3190 /* Color.swift */; };
+		626C31D028A49291005A3190 /* ScrollPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31CF28A49291005A3190 /* ScrollPhoto.swift */; };
+		626C31D228A492B3005A3190 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31D128A492B3005A3190 /* Info.swift */; };
+		626C31D628A4D67C005A3190 /* SearchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31D528A4D67C005A3190 /* SearchPageViewController.swift */; };
+		626C31D828A4D69B005A3190 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31D728A4D69B005A3190 /* SearchResultTableViewCell.swift */; };
+		626C31DA28A4D6B5005A3190 /* SearchRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31D928A4D6B5005A3190 /* SearchRecordTableViewCell.swift */; };
+		626C31DC28A4D8B0005A3190 /* FindExhibitionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31DB28A4D8B0005A3190 /* FindExhibitionViewModel.swift */; };
+		626C31DF28A4D968005A3190 /* NearbyExhibitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31DE28A4D968005A3190 /* NearbyExhibitionViewController.swift */; };
+		626C31E228A4D992005A3190 /* ShareExhibitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31E128A4D992005A3190 /* ShareExhibitionViewController.swift */; };
+		626C31E528A4D9E7005A3190 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31E428A4D9E7005A3190 /* MainTabBarController.swift */; };
+		626C31E728A4DB4E005A3190 /* FindExhibitionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31E628A4DB4E005A3190 /* FindExhibitionTableView.swift */; };
+		626C31E928A4DB90005A3190 /* ScrollPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31E828A4DB90005A3190 /* ScrollPhotoTableViewCell.swift */; };
+		626C31EB28A4DBAD005A3190 /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31EA28A4DBAD005A3190 /* FilterTableViewCell.swift */; };
+		626C31ED28A4DBD5005A3190 /* FindExhibitionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31EC28A4DBD5005A3190 /* FindExhibitionTableViewCell.swift */; };
+		626C31F028A4DCCD005A3190 /* WhetherStartExhibitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31EF28A4DCCD005A3190 /* WhetherStartExhibitionButton.swift */; };
+		626C31FB28A4DE02005A3190 /* FilterExhibitionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31FA28A4DE02005A3190 /* FilterExhibitionButtons.swift */; };
+		626C31FD28A4DE22005A3190 /* FilterExhibitionButtonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31FC28A4DE22005A3190 /* FilterExhibitionButtonsCell.swift */; };
+		626C31FF28A4DE5C005A3190 /* NorthAreaButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31FE28A4DE5C005A3190 /* NorthAreaButtons.swift */; };
+		626C320128A4DE9B005A3190 /* NorthAreaButtonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C320028A4DE9B005A3190 /* NorthAreaButtonsCell.swift */; };
+		626C320328A4DEFF005A3190 /* MiddleAreaButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C320228A4DEFF005A3190 /* MiddleAreaButtons.swift */; };
+		626C320528A4DF23005A3190 /* MiddleAreaButtonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C320428A4DF23005A3190 /* MiddleAreaButtonsCell.swift */; };
+		626C320728A4DF4F005A3190 /* SouthAreaButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C320628A4DF4F005A3190 /* SouthAreaButtons.swift */; };
+		626C320928A4DF6B005A3190 /* SouthAreaButtonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C320828A4DF6B005A3190 /* SouthAreaButtonsCell.swift */; };
+		626C320B28A4DF93005A3190 /* EastAreaButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C320A28A4DF93005A3190 /* EastAreaButtons.swift */; };
+		626C320D28A4DFA7005A3190 /* EastAreaButtonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C320C28A4DFA7005A3190 /* EastAreaButtonsCell.swift */; };
+		626C320F28A4DFBB005A3190 /* OuterIslandAreaButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C320E28A4DFBB005A3190 /* OuterIslandAreaButtons.swift */; };
+		626C321128A4DFCE005A3190 /* OuterIslandAreaButtonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C321028A4DFCE005A3190 /* OuterIslandAreaButtonsCell.swift */; };
+		626C321328A4DFE6005A3190 /* FilterPositionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C321228A4DFE6005A3190 /* FilterPositionButtons.swift */; };
+		626C321528A4DFFB005A3190 /* FilterPositionButtonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C321428A4DFFB005A3190 /* FilterPositionButtonsCell.swift */; };
+		626C321728A4E323005A3190 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C321628A4E323005A3190 /* CalendarView.swift */; };
+		626C321B28A4E3F6005A3190 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C321A28A4E3F6005A3190 /* DateCell.swift */; };
+		626C321D28A4E4CF005A3190 /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C321C28A4E4CF005A3190 /* DateHeader.swift */; };
+		626C322028A4E753005A3190 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C321F28A4E753005A3190 /* SideMenuViewController.swift */; };
+		626C322328A4F0A8005A3190 /* SeeAllExhibitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C322228A4F0A8005A3190 /* SeeAllExhibitionViewController.swift */; };
+		626C322528A4F0C5005A3190 /* SeeAllExhibitionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C322428A4F0C5005A3190 /* SeeAllExhibitionTableView.swift */; };
+		626C322728A4F0DD005A3190 /* SeeAllExhibitionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C322628A4F0DD005A3190 /* SeeAllExhibitionViewModel.swift */; };
+		626C322A28A4F173005A3190 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C322928A4F172005A3190 /* SearchViewController.swift */; };
+		626C322C28A4F18F005A3190 /* WhetherStartBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C322B28A4F18F005A3190 /* WhetherStartBottomSheetViewController.swift */; };
+		626C322E28A4F1B2005A3190 /* TabButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C322D28A4F1B2005A3190 /* TabButtonCollectionViewCell.swift */; };
+		626C323328A4F231005A3190 /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C323228A4F231005A3190 /* AreaViewController.swift */; };
+		626C323528A4F24A005A3190 /* ExhibitionPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C323428A4F24A005A3190 /* ExhibitionPlaceViewController.swift */; };
+		626C323728A4F256005A3190 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C323628A4F256005A3190 /* DateViewController.swift */; };
+		626C323928A4F2C0005A3190 /* MonthCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C323828A4F2C0005A3190 /* MonthCollectionView.swift */; };
+		626C323B28A4F2D6005A3190 /* MonthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C323A28A4F2D6005A3190 /* MonthCollectionViewCell.swift */; };
+		626C323E28A4F5DC005A3190 /* SearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C323D28A4F5DC005A3190 /* SearchResultViewModel.swift */; };
+		626C324028A4F612005A3190 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C323F28A4F612005A3190 /* SearchResultViewController.swift */; };
+		626C324228A4F635005A3190 /* SearchResultTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C324128A4F635005A3190 /* SearchResultTableView.swift */; };
+		626C324428A4F658005A3190 /* SearchResultListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C324328A4F658005A3190 /* SearchResultListTableViewCell.swift */; };
+		626C324728A4F688005A3190 /* TotalExhibitionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C324628A4F688005A3190 /* TotalExhibitionTableViewCell.swift */; };
+		626C324D28A4F7F1005A3190 /* ExhibitionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C324C28A4F7F1005A3190 /* ExhibitionDetailViewController.swift */; };
+		626C324F28A4F87B005A3190 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C324E28A4F87B005A3190 /* InfoViewController.swift */; };
+		626C325128A4F886005A3190 /* FareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C325028A4F886005A3190 /* FareViewController.swift */; };
+		626C325328A4F892005A3190 /* IntroduceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C325228A4F892005A3190 /* IntroduceViewController.swift */; };
+		626C325528A4F90D005A3190 /* PhotosCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C325428A4F90D005A3190 /* PhotosCollectionView.swift */; };
+		626C325728A4F91A005A3190 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C325628A4F91A005A3190 /* PhotosCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F0B1244207B5A59DCC7FA72 /* Pods_TaiwanArtionApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaiwanArtionApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		626C31AD28A48F7F005A3190 /* TaiwanArtionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaiwanArtionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		626C31B028A48F7F005A3190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		626C31B228A48F7F005A3190 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		626C31B428A48F7F005A3190 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		626C31B728A48F7F005A3190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		626C31BA28A48F7F005A3190 /* TaiwanArtionApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaiwanArtionApp.xcdatamodel; sourceTree = "<group>"; };
 		626C31BC28A48F81005A3190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		626C31BF28A48F81005A3190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		626C31C128A48F81005A3190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		626C31C828A49101005A3190 /* FindExhibitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindExhibitionViewController.swift; sourceTree = "<group>"; };
+		626C31CD28A49252005A3190 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		626C31CF28A49291005A3190 /* ScrollPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPhoto.swift; sourceTree = "<group>"; };
+		626C31D128A492B3005A3190 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		626C31D528A4D67C005A3190 /* SearchPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageViewController.swift; sourceTree = "<group>"; };
+		626C31D728A4D69B005A3190 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		626C31D928A4D6B5005A3190 /* SearchRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecordTableViewCell.swift; sourceTree = "<group>"; };
+		626C31DB28A4D8B0005A3190 /* FindExhibitionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindExhibitionViewModel.swift; sourceTree = "<group>"; };
+		626C31DE28A4D968005A3190 /* NearbyExhibitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyExhibitionViewController.swift; sourceTree = "<group>"; };
+		626C31E128A4D992005A3190 /* ShareExhibitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareExhibitionViewController.swift; sourceTree = "<group>"; };
+		626C31E428A4D9E7005A3190 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		626C31E628A4DB4E005A3190 /* FindExhibitionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindExhibitionTableView.swift; sourceTree = "<group>"; };
+		626C31E828A4DB90005A3190 /* ScrollPhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPhotoTableViewCell.swift; sourceTree = "<group>"; };
+		626C31EA28A4DBAD005A3190 /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		626C31EC28A4DBD5005A3190 /* FindExhibitionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindExhibitionTableViewCell.swift; sourceTree = "<group>"; };
+		626C31EF28A4DCCD005A3190 /* WhetherStartExhibitionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhetherStartExhibitionButton.swift; sourceTree = "<group>"; };
+		626C31FA28A4DE02005A3190 /* FilterExhibitionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterExhibitionButtons.swift; sourceTree = "<group>"; };
+		626C31FC28A4DE22005A3190 /* FilterExhibitionButtonsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterExhibitionButtonsCell.swift; sourceTree = "<group>"; };
+		626C31FE28A4DE5C005A3190 /* NorthAreaButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthAreaButtons.swift; sourceTree = "<group>"; };
+		626C320028A4DE9B005A3190 /* NorthAreaButtonsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthAreaButtonsCell.swift; sourceTree = "<group>"; };
+		626C320228A4DEFF005A3190 /* MiddleAreaButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleAreaButtons.swift; sourceTree = "<group>"; };
+		626C320428A4DF23005A3190 /* MiddleAreaButtonsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleAreaButtonsCell.swift; sourceTree = "<group>"; };
+		626C320628A4DF4F005A3190 /* SouthAreaButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthAreaButtons.swift; sourceTree = "<group>"; };
+		626C320828A4DF6B005A3190 /* SouthAreaButtonsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthAreaButtonsCell.swift; sourceTree = "<group>"; };
+		626C320A28A4DF93005A3190 /* EastAreaButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EastAreaButtons.swift; sourceTree = "<group>"; };
+		626C320C28A4DFA7005A3190 /* EastAreaButtonsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EastAreaButtonsCell.swift; sourceTree = "<group>"; };
+		626C320E28A4DFBB005A3190 /* OuterIslandAreaButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OuterIslandAreaButtons.swift; sourceTree = "<group>"; };
+		626C321028A4DFCE005A3190 /* OuterIslandAreaButtonsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OuterIslandAreaButtonsCell.swift; sourceTree = "<group>"; };
+		626C321228A4DFE6005A3190 /* FilterPositionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPositionButtons.swift; sourceTree = "<group>"; };
+		626C321428A4DFFB005A3190 /* FilterPositionButtonsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPositionButtonsCell.swift; sourceTree = "<group>"; };
+		626C321628A4E323005A3190 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		626C321A28A4E3F6005A3190 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		626C321C28A4E4CF005A3190 /* DateHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
+		626C321F28A4E753005A3190 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		626C322228A4F0A8005A3190 /* SeeAllExhibitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllExhibitionViewController.swift; sourceTree = "<group>"; };
+		626C322428A4F0C5005A3190 /* SeeAllExhibitionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllExhibitionTableView.swift; sourceTree = "<group>"; };
+		626C322628A4F0DD005A3190 /* SeeAllExhibitionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllExhibitionViewModel.swift; sourceTree = "<group>"; };
+		626C322928A4F172005A3190 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		626C322B28A4F18F005A3190 /* WhetherStartBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhetherStartBottomSheetViewController.swift; sourceTree = "<group>"; };
+		626C322D28A4F1B2005A3190 /* TabButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		626C323228A4F231005A3190 /* AreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
+		626C323428A4F24A005A3190 /* ExhibitionPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionPlaceViewController.swift; sourceTree = "<group>"; };
+		626C323628A4F256005A3190 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		626C323828A4F2C0005A3190 /* MonthCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCollectionView.swift; sourceTree = "<group>"; };
+		626C323A28A4F2D6005A3190 /* MonthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCollectionViewCell.swift; sourceTree = "<group>"; };
+		626C323D28A4F5DC005A3190 /* SearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewModel.swift; sourceTree = "<group>"; };
+		626C323F28A4F612005A3190 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		626C324128A4F635005A3190 /* SearchResultTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableView.swift; sourceTree = "<group>"; };
+		626C324328A4F658005A3190 /* SearchResultListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultListTableViewCell.swift; sourceTree = "<group>"; };
+		626C324628A4F688005A3190 /* TotalExhibitionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalExhibitionTableViewCell.swift; sourceTree = "<group>"; };
+		626C324C28A4F7F1005A3190 /* ExhibitionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionDetailViewController.swift; sourceTree = "<group>"; };
+		626C324E28A4F87B005A3190 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		626C325028A4F886005A3190 /* FareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareViewController.swift; sourceTree = "<group>"; };
+		626C325228A4F892005A3190 /* IntroduceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroduceViewController.swift; sourceTree = "<group>"; };
+		626C325428A4F90D005A3190 /* PhotosCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionView.swift; sourceTree = "<group>"; };
+		626C325628A4F91A005A3190 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		84BB25E087863BDCF7AD77BE /* Pods-TaiwanArtionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiwanArtionApp.debug.xcconfig"; path = "Target Support Files/Pods-TaiwanArtionApp/Pods-TaiwanArtionApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EF65E626985DD3AEE7D7376F /* Pods-TaiwanArtionApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiwanArtionApp.release.xcconfig"; path = "Target Support Files/Pods-TaiwanArtionApp/Pods-TaiwanArtionApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +145,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56092EC0312BB3CD89DBB5B9 /* Pods_TaiwanArtionApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BE72352E7A7E2B2A55EF81A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84BB25E087863BDCF7AD77BE /* Pods-TaiwanArtionApp.debug.xcconfig */,
+				EF65E626985DD3AEE7D7376F /* Pods-TaiwanArtionApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		626C31A428A48F7F005A3190 = {
 			isa = PBXGroup;
 			children = (
 				626C31AF28A48F7F005A3190 /* TaiwanArtionApp */,
 				626C31AE28A48F7F005A3190 /* Products */,
+				5BE72352E7A7E2B2A55EF81A /* Pods */,
+				75CDF5273ED99A1BD1383DE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +182,319 @@
 		626C31AF28A48F7F005A3190 /* TaiwanArtionApp */ = {
 			isa = PBXGroup;
 			children = (
-				626C31B028A48F7F005A3190 /* AppDelegate.swift */,
-				626C31B228A48F7F005A3190 /* SceneDelegate.swift */,
-				626C31B428A48F7F005A3190 /* ViewController.swift */,
-				626C31B628A48F7F005A3190 /* Main.storyboard */,
+				626C31C728A48FDD005A3190 /* Application */,
+				626C31CB28A49208005A3190 /* Model */,
+				626C31CC28A49218005A3190 /* Extension */,
+				626C31D328A492E8005A3190 /* UI */,
+				626C31E328A4D9A5005A3190 /* TabBarController */,
+				626C31CA28A49155005A3190 /* FindExhibition */,
+				626C31DD28A4D8E1005A3190 /* NearbyExhibition */,
+				626C31E028A4D971005A3190 /* ShareExhibition */,
 				626C31BC28A48F81005A3190 /* Assets.xcassets */,
 				626C31BE28A48F81005A3190 /* LaunchScreen.storyboard */,
 				626C31C128A48F81005A3190 /* Info.plist */,
 				626C31B928A48F7F005A3190 /* TaiwanArtionApp.xcdatamodeld */,
 			);
 			path = TaiwanArtionApp;
+			sourceTree = "<group>";
+		};
+		626C31C728A48FDD005A3190 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				626C31B028A48F7F005A3190 /* AppDelegate.swift */,
+				626C31B228A48F7F005A3190 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		626C31CA28A49155005A3190 /* FindExhibition */ = {
+			isa = PBXGroup;
+			children = (
+				626C31DB28A4D8B0005A3190 /* FindExhibitionViewModel.swift */,
+				626C31C828A49101005A3190 /* FindExhibitionViewController.swift */,
+				626C31E628A4DB4E005A3190 /* FindExhibitionTableView.swift */,
+				626C31E828A4DB90005A3190 /* ScrollPhotoTableViewCell.swift */,
+				626C31EA28A4DBAD005A3190 /* FilterTableViewCell.swift */,
+				626C31EC28A4DBD5005A3190 /* FindExhibitionTableViewCell.swift */,
+				626C321E28A4E721005A3190 /* SideMenu */,
+				626C322128A4F075005A3190 /* SeeAll */,
+				626C322828A4F145005A3190 /* Search */,
+			);
+			path = FindExhibition;
+			sourceTree = "<group>";
+		};
+		626C31CB28A49208005A3190 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				626C31CF28A49291005A3190 /* ScrollPhoto.swift */,
+				626C31D128A492B3005A3190 /* Info.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		626C31CC28A49218005A3190 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				626C31CD28A49252005A3190 /* Color.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		626C31D328A492E8005A3190 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				626C31D428A4D53B005A3190 /* SearchBar */,
+				626C31EE28A4DCAC005A3190 /* WhetherStartExhibitionButton */,
+				626C31F128A4DCE8005A3190 /* FilterButtons */,
+				626C31F928A4DDB9005A3190 /* Calendar */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		626C31D428A4D53B005A3190 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				626C31D528A4D67C005A3190 /* SearchPageViewController.swift */,
+				626C31D728A4D69B005A3190 /* SearchResultTableViewCell.swift */,
+				626C31D928A4D6B5005A3190 /* SearchRecordTableViewCell.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		626C31DD28A4D8E1005A3190 /* NearbyExhibition */ = {
+			isa = PBXGroup;
+			children = (
+				626C31DE28A4D968005A3190 /* NearbyExhibitionViewController.swift */,
+			);
+			path = NearbyExhibition;
+			sourceTree = "<group>";
+		};
+		626C31E028A4D971005A3190 /* ShareExhibition */ = {
+			isa = PBXGroup;
+			children = (
+				626C31E128A4D992005A3190 /* ShareExhibitionViewController.swift */,
+			);
+			path = ShareExhibition;
+			sourceTree = "<group>";
+		};
+		626C31E328A4D9A5005A3190 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				626C31E428A4D9E7005A3190 /* MainTabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		626C31EE28A4DCAC005A3190 /* WhetherStartExhibitionButton */ = {
+			isa = PBXGroup;
+			children = (
+				626C31EF28A4DCCD005A3190 /* WhetherStartExhibitionButton.swift */,
+			);
+			path = WhetherStartExhibitionButton;
+			sourceTree = "<group>";
+		};
+		626C31F128A4DCE8005A3190 /* FilterButtons */ = {
+			isa = PBXGroup;
+			children = (
+				626C31F228A4DCFA005A3190 /* FilterExhibitionButton */,
+				626C31F328A4DD12005A3190 /* NorthAreaButtons */,
+				626C31F428A4DD35005A3190 /* MiddleAreaButtons */,
+				626C31F528A4DD5A005A3190 /* SouthAreaButtons */,
+				626C31F628A4DD68005A3190 /* EastAreaButtons */,
+				626C31F728A4DD7A005A3190 /* OuterIslandAreaButtons */,
+				626C31F828A4DDA6005A3190 /* FilterPositionButtons */,
+			);
+			path = FilterButtons;
+			sourceTree = "<group>";
+		};
+		626C31F228A4DCFA005A3190 /* FilterExhibitionButton */ = {
+			isa = PBXGroup;
+			children = (
+				626C31FA28A4DE02005A3190 /* FilterExhibitionButtons.swift */,
+				626C31FC28A4DE22005A3190 /* FilterExhibitionButtonsCell.swift */,
+			);
+			path = FilterExhibitionButton;
+			sourceTree = "<group>";
+		};
+		626C31F328A4DD12005A3190 /* NorthAreaButtons */ = {
+			isa = PBXGroup;
+			children = (
+				626C31FE28A4DE5C005A3190 /* NorthAreaButtons.swift */,
+				626C320028A4DE9B005A3190 /* NorthAreaButtonsCell.swift */,
+			);
+			path = NorthAreaButtons;
+			sourceTree = "<group>";
+		};
+		626C31F428A4DD35005A3190 /* MiddleAreaButtons */ = {
+			isa = PBXGroup;
+			children = (
+				626C320228A4DEFF005A3190 /* MiddleAreaButtons.swift */,
+				626C320428A4DF23005A3190 /* MiddleAreaButtonsCell.swift */,
+			);
+			path = MiddleAreaButtons;
+			sourceTree = "<group>";
+		};
+		626C31F528A4DD5A005A3190 /* SouthAreaButtons */ = {
+			isa = PBXGroup;
+			children = (
+				626C320628A4DF4F005A3190 /* SouthAreaButtons.swift */,
+				626C320828A4DF6B005A3190 /* SouthAreaButtonsCell.swift */,
+			);
+			path = SouthAreaButtons;
+			sourceTree = "<group>";
+		};
+		626C31F628A4DD68005A3190 /* EastAreaButtons */ = {
+			isa = PBXGroup;
+			children = (
+				626C320A28A4DF93005A3190 /* EastAreaButtons.swift */,
+				626C320C28A4DFA7005A3190 /* EastAreaButtonsCell.swift */,
+			);
+			name = EastAreaButtons;
+			path = SouthAreaButtons;
+			sourceTree = "<group>";
+		};
+		626C31F728A4DD7A005A3190 /* OuterIslandAreaButtons */ = {
+			isa = PBXGroup;
+			children = (
+				626C320E28A4DFBB005A3190 /* OuterIslandAreaButtons.swift */,
+				626C321028A4DFCE005A3190 /* OuterIslandAreaButtonsCell.swift */,
+			);
+			path = OuterIslandAreaButtons;
+			sourceTree = "<group>";
+		};
+		626C31F828A4DDA6005A3190 /* FilterPositionButtons */ = {
+			isa = PBXGroup;
+			children = (
+				626C321228A4DFE6005A3190 /* FilterPositionButtons.swift */,
+				626C321428A4DFFB005A3190 /* FilterPositionButtonsCell.swift */,
+			);
+			path = FilterPositionButtons;
+			sourceTree = "<group>";
+		};
+		626C31F928A4DDB9005A3190 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				626C321628A4E323005A3190 /* CalendarView.swift */,
+				626C321A28A4E3F6005A3190 /* DateCell.swift */,
+				626C321C28A4E4CF005A3190 /* DateHeader.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		626C321E28A4E721005A3190 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				626C321F28A4E753005A3190 /* SideMenuViewController.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		626C322128A4F075005A3190 /* SeeAll */ = {
+			isa = PBXGroup;
+			children = (
+				626C322628A4F0DD005A3190 /* SeeAllExhibitionViewModel.swift */,
+				626C322228A4F0A8005A3190 /* SeeAllExhibitionViewController.swift */,
+				626C322428A4F0C5005A3190 /* SeeAllExhibitionTableView.swift */,
+			);
+			path = SeeAll;
+			sourceTree = "<group>";
+		};
+		626C322828A4F145005A3190 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				626C322928A4F172005A3190 /* SearchViewController.swift */,
+				626C322B28A4F18F005A3190 /* WhetherStartBottomSheetViewController.swift */,
+				626C322D28A4F1B2005A3190 /* TabButtonCollectionViewCell.swift */,
+				626C322F28A4F1F8005A3190 /* Area */,
+				626C323028A4F201005A3190 /* ExhibitionPlace */,
+				626C323128A4F214005A3190 /* Date */,
+				626C323C28A4F330005A3190 /* SearchResult */,
+				626C324828A4F767005A3190 /* ExhibitionDetail */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		626C322F28A4F1F8005A3190 /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				626C323228A4F231005A3190 /* AreaViewController.swift */,
+			);
+			path = Area;
+			sourceTree = "<group>";
+		};
+		626C323028A4F201005A3190 /* ExhibitionPlace */ = {
+			isa = PBXGroup;
+			children = (
+				626C323428A4F24A005A3190 /* ExhibitionPlaceViewController.swift */,
+			);
+			path = ExhibitionPlace;
+			sourceTree = "<group>";
+		};
+		626C323128A4F214005A3190 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				626C323628A4F256005A3190 /* DateViewController.swift */,
+				626C323828A4F2C0005A3190 /* MonthCollectionView.swift */,
+				626C323A28A4F2D6005A3190 /* MonthCollectionViewCell.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		626C323C28A4F330005A3190 /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				626C323D28A4F5DC005A3190 /* SearchResultViewModel.swift */,
+				626C323F28A4F612005A3190 /* SearchResultViewController.swift */,
+				626C324128A4F635005A3190 /* SearchResultTableView.swift */,
+				626C324628A4F688005A3190 /* TotalExhibitionTableViewCell.swift */,
+				626C324328A4F658005A3190 /* SearchResultListTableViewCell.swift */,
+			);
+			path = SearchResult;
+			sourceTree = "<group>";
+		};
+		626C324828A4F767005A3190 /* ExhibitionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				626C324C28A4F7F1005A3190 /* ExhibitionDetailViewController.swift */,
+				626C325428A4F90D005A3190 /* PhotosCollectionView.swift */,
+				626C325628A4F91A005A3190 /* PhotosCollectionViewCell.swift */,
+				626C324928A4F781005A3190 /* Info */,
+				626C324A28A4F788005A3190 /* Fare */,
+				626C324B28A4F78F005A3190 /* Introduce */,
+			);
+			path = ExhibitionDetail;
+			sourceTree = "<group>";
+		};
+		626C324928A4F781005A3190 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				626C324E28A4F87B005A3190 /* InfoViewController.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		626C324A28A4F788005A3190 /* Fare */ = {
+			isa = PBXGroup;
+			children = (
+				626C325028A4F886005A3190 /* FareViewController.swift */,
+			);
+			path = Fare;
+			sourceTree = "<group>";
+		};
+		626C324B28A4F78F005A3190 /* Introduce */ = {
+			isa = PBXGroup;
+			children = (
+				626C325228A4F892005A3190 /* IntroduceViewController.swift */,
+			);
+			path = Introduce;
+			sourceTree = "<group>";
+		};
+		75CDF5273ED99A1BD1383DE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F0B1244207B5A59DCC7FA72 /* Pods_TaiwanArtionApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +504,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 626C31C428A48F81005A3190 /* Build configuration list for PBXNativeTarget "TaiwanArtionApp" */;
 			buildPhases = (
+				DEF32F6D94A32D9C573392FC /* [CP] Check Pods Manifest.lock */,
 				626C31A928A48F7F005A3190 /* Sources */,
 				626C31AA28A48F7F005A3190 /* Frameworks */,
 				626C31AB28A48F7F005A3190 /* Resources */,
+				A6B9A7816F6A18577C5EAF27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,35 +559,123 @@
 			files = (
 				626C31C028A48F81005A3190 /* LaunchScreen.storyboard in Resources */,
 				626C31BD28A48F81005A3190 /* Assets.xcassets in Resources */,
-				626C31B828A48F7F005A3190 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6B9A7816F6A18577C5EAF27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaiwanArtionApp/Pods-TaiwanArtionApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaiwanArtionApp/Pods-TaiwanArtionApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaiwanArtionApp/Pods-TaiwanArtionApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEF32F6D94A32D9C573392FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaiwanArtionApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		626C31A928A48F7F005A3190 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				626C31B528A48F7F005A3190 /* ViewController.swift in Sources */,
+				626C321328A4DFE6005A3190 /* FilterPositionButtons.swift in Sources */,
+				626C325728A4F91A005A3190 /* PhotosCollectionViewCell.swift in Sources */,
+				626C322528A4F0C5005A3190 /* SeeAllExhibitionTableView.swift in Sources */,
+				626C321128A4DFCE005A3190 /* OuterIslandAreaButtonsCell.swift in Sources */,
+				626C31DA28A4D6B5005A3190 /* SearchRecordTableViewCell.swift in Sources */,
+				626C322C28A4F18F005A3190 /* WhetherStartBottomSheetViewController.swift in Sources */,
+				626C323B28A4F2D6005A3190 /* MonthCollectionViewCell.swift in Sources */,
+				626C320B28A4DF93005A3190 /* EastAreaButtons.swift in Sources */,
+				626C323728A4F256005A3190 /* DateViewController.swift in Sources */,
+				626C31C928A49101005A3190 /* FindExhibitionViewController.swift in Sources */,
+				626C325328A4F892005A3190 /* IntroduceViewController.swift in Sources */,
+				626C320728A4DF4F005A3190 /* SouthAreaButtons.swift in Sources */,
+				626C31DF28A4D968005A3190 /* NearbyExhibitionViewController.swift in Sources */,
 				626C31B128A48F7F005A3190 /* AppDelegate.swift in Sources */,
 				626C31BB28A48F7F005A3190 /* TaiwanArtionApp.xcdatamodeld in Sources */,
+				626C324728A4F688005A3190 /* TotalExhibitionTableViewCell.swift in Sources */,
+				626C31E928A4DB90005A3190 /* ScrollPhotoTableViewCell.swift in Sources */,
+				626C323E28A4F5DC005A3190 /* SearchResultViewModel.swift in Sources */,
+				626C31D628A4D67C005A3190 /* SearchPageViewController.swift in Sources */,
+				626C31D028A49291005A3190 /* ScrollPhoto.swift in Sources */,
+				626C320D28A4DFA7005A3190 /* EastAreaButtonsCell.swift in Sources */,
+				626C320528A4DF23005A3190 /* MiddleAreaButtonsCell.swift in Sources */,
+				626C31FB28A4DE02005A3190 /* FilterExhibitionButtons.swift in Sources */,
+				626C320328A4DEFF005A3190 /* MiddleAreaButtons.swift in Sources */,
+				626C324228A4F635005A3190 /* SearchResultTableView.swift in Sources */,
+				626C321B28A4E3F6005A3190 /* DateCell.swift in Sources */,
+				626C31DC28A4D8B0005A3190 /* FindExhibitionViewModel.swift in Sources */,
+				626C320128A4DE9B005A3190 /* NorthAreaButtonsCell.swift in Sources */,
+				626C320928A4DF6B005A3190 /* SouthAreaButtonsCell.swift in Sources */,
+				626C320F28A4DFBB005A3190 /* OuterIslandAreaButtons.swift in Sources */,
+				626C323328A4F231005A3190 /* AreaViewController.swift in Sources */,
+				626C322E28A4F1B2005A3190 /* TabButtonCollectionViewCell.swift in Sources */,
+				626C324D28A4F7F1005A3190 /* ExhibitionDetailViewController.swift in Sources */,
+				626C321728A4E323005A3190 /* CalendarView.swift in Sources */,
+				626C31CE28A49252005A3190 /* Color.swift in Sources */,
+				626C322328A4F0A8005A3190 /* SeeAllExhibitionViewController.swift in Sources */,
+				626C324F28A4F87B005A3190 /* InfoViewController.swift in Sources */,
 				626C31B328A48F7F005A3190 /* SceneDelegate.swift in Sources */,
+				626C324028A4F612005A3190 /* SearchResultViewController.swift in Sources */,
+				626C31F028A4DCCD005A3190 /* WhetherStartExhibitionButton.swift in Sources */,
+				626C31E728A4DB4E005A3190 /* FindExhibitionTableView.swift in Sources */,
+				626C31E528A4D9E7005A3190 /* MainTabBarController.swift in Sources */,
+				626C325128A4F886005A3190 /* FareViewController.swift in Sources */,
+				626C322A28A4F173005A3190 /* SearchViewController.swift in Sources */,
+				626C31D228A492B3005A3190 /* Info.swift in Sources */,
+				626C323528A4F24A005A3190 /* ExhibitionPlaceViewController.swift in Sources */,
+				626C322028A4E753005A3190 /* SideMenuViewController.swift in Sources */,
+				626C322728A4F0DD005A3190 /* SeeAllExhibitionViewModel.swift in Sources */,
+				626C321528A4DFFB005A3190 /* FilterPositionButtonsCell.swift in Sources */,
+				626C31EB28A4DBAD005A3190 /* FilterTableViewCell.swift in Sources */,
+				626C321D28A4E4CF005A3190 /* DateHeader.swift in Sources */,
+				626C323928A4F2C0005A3190 /* MonthCollectionView.swift in Sources */,
+				626C325528A4F90D005A3190 /* PhotosCollectionView.swift in Sources */,
+				626C31FD28A4DE22005A3190 /* FilterExhibitionButtonsCell.swift in Sources */,
+				626C31FF28A4DE5C005A3190 /* NorthAreaButtons.swift in Sources */,
+				626C31D828A4D69B005A3190 /* SearchResultTableViewCell.swift in Sources */,
+				626C31E228A4D992005A3190 /* ShareExhibitionViewController.swift in Sources */,
+				626C324428A4F658005A3190 /* SearchResultListTableViewCell.swift in Sources */,
+				626C31ED28A4DBD5005A3190 /* FindExhibitionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		626C31B628A48F7F005A3190 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				626C31B728A48F7F005A3190 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		626C31BE28A48F81005A3190 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,6 +803,7 @@
 		};
 		626C31C528A48F81005A3190 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84BB25E087863BDCF7AD77BE /* Pods-TaiwanArtionApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,7 +814,6 @@
 				INFOPLIST_FILE = TaiwanArtionApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -314,6 +831,7 @@
 		};
 		626C31C628A48F81005A3190 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF65E626985DD3AEE7D7376F /* Pods-TaiwanArtionApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -324,7 +842,6 @@
 				INFOPLIST_FILE = TaiwanArtionApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
