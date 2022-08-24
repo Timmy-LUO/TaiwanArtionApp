@@ -36,11 +36,13 @@ class FindExhibitionViewController: UIViewController {
         super.viewDidLoad()
         tableView.buttonDelegate = self
         tableView.cellDelegate = self
+        tableView.viewModel = viewModel
         setupUI()
         setupSideMenu()
         setupNavigation()
         setupBinding()
         viewModel.inputs.viewDidLoad.accept(())
+        
     }
     
     // MARK: - Set SideMenu
@@ -113,8 +115,9 @@ extension FindExhibitionViewController: TableViewCellDelegate {
 }
 
 extension FindExhibitionViewController: SearchResultCellDelegate {
-    func pushToExhibitionDetail() {
-        let vc = ExhibitionDetailViewController()
-        navigationController?.pushViewController(vc, animated: true)
+    func pushToExhibitionDetail(category: AllCategories) {
+        print("category: \(category)")
+//        let vc = ExhibitionDetailViewController()
+//        navigationController?.pushViewController(vc, animated: true)
     }
 }

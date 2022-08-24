@@ -11,4 +11,7 @@ target 'TaiwanArtionApp' do
   pod 'JTAppleCalendar'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'Alamofire'
+  pod 'Kingfisher'
+  pod 'RxGesture'
 end

@@ -69,6 +69,12 @@
 		626C325328A4F892005A3190 /* IntroduceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C325228A4F892005A3190 /* IntroduceViewController.swift */; };
 		626C325528A4F90D005A3190 /* PhotosCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C325428A4F90D005A3190 /* PhotosCollectionView.swift */; };
 		626C325728A4F91A005A3190 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C325628A4F91A005A3190 /* PhotosCollectionViewCell.swift */; };
+		626DC06B28B33C75008EC37F /* ArtsHumanities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626DC06A28B33C75008EC37F /* ArtsHumanities.swift */; };
+		626DC06D28B34033008EC37F /* Museum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626DC06C28B34033008EC37F /* Museum.swift */; };
+		626DC06F28B346C2008EC37F /* AllCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626DC06E28B346C2008EC37F /* AllCategories.swift */; };
+		626DC07128B35AFD008EC37F /* ArtsHumanitiesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626DC07028B35AFD008EC37F /* ArtsHumanitiesService.swift */; };
+		626DC07328B35B34008EC37F /* MuseumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626DC07228B35B34008EC37F /* MuseumService.swift */; };
+		626DC07528B35B49008EC37F /* AllCategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626DC07428B35B49008EC37F /* AllCategoriesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +142,12 @@
 		626C325228A4F892005A3190 /* IntroduceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroduceViewController.swift; sourceTree = "<group>"; };
 		626C325428A4F90D005A3190 /* PhotosCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionView.swift; sourceTree = "<group>"; };
 		626C325628A4F91A005A3190 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		626DC06A28B33C75008EC37F /* ArtsHumanities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtsHumanities.swift; sourceTree = "<group>"; };
+		626DC06C28B34033008EC37F /* Museum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Museum.swift; sourceTree = "<group>"; };
+		626DC06E28B346C2008EC37F /* AllCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategories.swift; sourceTree = "<group>"; };
+		626DC07028B35AFD008EC37F /* ArtsHumanitiesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtsHumanitiesService.swift; sourceTree = "<group>"; };
+		626DC07228B35B34008EC37F /* MuseumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumService.swift; sourceTree = "<group>"; };
+		626DC07428B35B49008EC37F /* AllCategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesService.swift; sourceTree = "<group>"; };
 		84BB25E087863BDCF7AD77BE /* Pods-TaiwanArtionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiwanArtionApp.debug.xcconfig"; path = "Target Support Files/Pods-TaiwanArtionApp/Pods-TaiwanArtionApp.debug.xcconfig"; sourceTree = "<group>"; };
 		EF65E626985DD3AEE7D7376F /* Pods-TaiwanArtionApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiwanArtionApp.release.xcconfig"; path = "Target Support Files/Pods-TaiwanArtionApp/Pods-TaiwanArtionApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				626C31C728A48FDD005A3190 /* Application */,
+				626DC06928B31F8F008EC37F /* Network */,
 				626C31CB28A49208005A3190 /* Model */,
 				626C31CC28A49218005A3190 /* Extension */,
 				626C31D328A492E8005A3190 /* UI */,
@@ -228,6 +241,9 @@
 			children = (
 				626C31CF28A49291005A3190 /* ScrollPhoto.swift */,
 				626C31D128A492B3005A3190 /* Info.swift */,
+				626DC06A28B33C75008EC37F /* ArtsHumanities.swift */,
+				626DC06C28B34033008EC37F /* Museum.swift */,
+				626DC06E28B346C2008EC37F /* AllCategories.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -489,6 +505,16 @@
 			path = Introduce;
 			sourceTree = "<group>";
 		};
+		626DC06928B31F8F008EC37F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				626DC07028B35AFD008EC37F /* ArtsHumanitiesService.swift */,
+				626DC07228B35B34008EC37F /* MuseumService.swift */,
+				626DC07428B35B49008EC37F /* AllCategoriesService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		75CDF5273ED99A1BD1383DE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -622,11 +648,13 @@
 				626C323728A4F256005A3190 /* DateViewController.swift in Sources */,
 				626C31C928A49101005A3190 /* FindExhibitionViewController.swift in Sources */,
 				626C325328A4F892005A3190 /* IntroduceViewController.swift in Sources */,
+				626DC06F28B346C2008EC37F /* AllCategories.swift in Sources */,
 				626C320728A4DF4F005A3190 /* SouthAreaButtons.swift in Sources */,
 				626C31DF28A4D968005A3190 /* NearbyExhibitionViewController.swift in Sources */,
 				626C31B128A48F7F005A3190 /* AppDelegate.swift in Sources */,
 				626C31BB28A48F7F005A3190 /* TaiwanArtionApp.xcdatamodeld in Sources */,
 				626C324728A4F688005A3190 /* TotalExhibitionTableViewCell.swift in Sources */,
+				626DC07128B35AFD008EC37F /* ArtsHumanitiesService.swift in Sources */,
 				626C31E928A4DB90005A3190 /* ScrollPhotoTableViewCell.swift in Sources */,
 				626C323E28A4F5DC005A3190 /* SearchResultViewModel.swift in Sources */,
 				626C31D628A4D67C005A3190 /* SearchPageViewController.swift in Sources */,
@@ -639,6 +667,7 @@
 				626C321B28A4E3F6005A3190 /* DateCell.swift in Sources */,
 				626C31DC28A4D8B0005A3190 /* FindExhibitionViewModel.swift in Sources */,
 				626C320128A4DE9B005A3190 /* NorthAreaButtonsCell.swift in Sources */,
+				626DC06B28B33C75008EC37F /* ArtsHumanities.swift in Sources */,
 				626C320928A4DF6B005A3190 /* SouthAreaButtonsCell.swift in Sources */,
 				626C320F28A4DFBB005A3190 /* OuterIslandAreaButtons.swift in Sources */,
 				626C323328A4F231005A3190 /* AreaViewController.swift in Sources */,
@@ -654,7 +683,9 @@
 				626C31E728A4DB4E005A3190 /* FindExhibitionTableView.swift in Sources */,
 				626C31E528A4D9E7005A3190 /* MainTabBarController.swift in Sources */,
 				626C325128A4F886005A3190 /* FareViewController.swift in Sources */,
+				626DC07528B35B49008EC37F /* AllCategoriesService.swift in Sources */,
 				626C322A28A4F173005A3190 /* SearchViewController.swift in Sources */,
+				626DC06D28B34033008EC37F /* Museum.swift in Sources */,
 				626C31D228A492B3005A3190 /* Info.swift in Sources */,
 				626C323528A4F24A005A3190 /* ExhibitionPlaceViewController.swift in Sources */,
 				626C322028A4E753005A3190 /* SideMenuViewController.swift in Sources */,
@@ -666,6 +697,7 @@
 				626C325528A4F90D005A3190 /* PhotosCollectionView.swift in Sources */,
 				626C31FD28A4DE22005A3190 /* FilterExhibitionButtonsCell.swift in Sources */,
 				626C31FF28A4DE5C005A3190 /* NorthAreaButtons.swift in Sources */,
+				626DC07328B35B34008EC37F /* MuseumService.swift in Sources */,
 				626C31D828A4D69B005A3190 /* SearchResultTableViewCell.swift in Sources */,
 				626C31E228A4D992005A3190 /* ShareExhibitionViewController.swift in Sources */,
 				626C324428A4F658005A3190 /* SearchResultListTableViewCell.swift in Sources */,

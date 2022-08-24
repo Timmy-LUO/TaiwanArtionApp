@@ -9,7 +9,7 @@ import UIKit
 
 class SeeAllExhibitionTableView: UITableView {
     
-    private var cellInfo = [CellInfo]()
+    private var cellInfo = [AllCategories]()
     
     weak var cellDelegate: SearchResultCellDelegate?
 
@@ -33,7 +33,7 @@ class SeeAllExhibitionTableView: UITableView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setCellInfo(list: [CellInfo]) {
+    func setCellInfo(list: [AllCategories]) {
         cellInfo = list
         reloadData()
     }

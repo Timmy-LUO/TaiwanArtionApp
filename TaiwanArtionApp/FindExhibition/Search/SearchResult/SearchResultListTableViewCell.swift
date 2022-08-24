@@ -104,7 +104,7 @@ class SearchResultListTableViewCell: UITableViewCell {
     
     @objc
     private func touch() {
-        cellDelegate?.pushToExhibitionDetail()
+//        cellDelegate?.pushToExhibitionDetail()
     }
     
     // MARK: - Setup UI

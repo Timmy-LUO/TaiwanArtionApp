@@ -70,7 +70,7 @@ class SeeAllExhibitionViewController: UIViewController {
         viewModel.outputs
             .cellInfoList
             .emit(onNext: { [weak self] info in
-                self?.tableView.setCellInfo(list: info)
+//                self?.tableView.setCellInfo(list: info)
             })
             .disposed(by: disposeBag)
     }
@@ -83,7 +83,7 @@ class SeeAllExhibitionViewController: UIViewController {
 }
 
 extension SeeAllExhibitionViewController: SearchResultCellDelegate {
-    func pushToExhibitionDetail() {
+    func pushToExhibitionDetail(category: AllCategories) {
         let vc = ExhibitionDetailViewController()
         navigationController?.pushViewController(vc, animated: true)
     }

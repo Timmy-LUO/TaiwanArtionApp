@@ -7,14 +7,16 @@
 
 import UIKit
 import SnapKit
+import Kingfisher
+import RxGesture
+import RxSwift
 
 class FindExhibitionTableViewCell: UITableViewCell {
     
     static let identifier = "FindExhibitionTableViewCell"
     
     weak var cellDelegate: SearchResultCellDelegate?
-    
-    var cellInfo = [CellInfo]()
+    private var disposeBag = DisposeBag()
     
     // MARK: - UIs
     private let backView: UIView = {
@@ -92,17 +94,22 @@ class FindExhibitionTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override public func prepareForReuse() {
+        super.prepareForReuse()
+        disposeBag = DisposeBag()
+    }
+    
     // MARK: - Methods
     private func viewTap() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(touch))
         tap.numberOfTapsRequired = 1
         tap.numberOfTouchesRequired = 1
-        backView.addGestureRecognizer(tap)
+//        backView.addGestureRecognizer(tap)
     }
     
     @objc
     private func touch() {
-        cellDelegate?.pushToExhibitionDetail()
+//        cellDelegate?.pushToExhibitionDetail()
     }
     
     // MARK: - Setup UI
@@ -155,11 +162,19 @@ class FindExhibitionTableViewCell: UITableViewCell {
         }
     }
     
-    func bind(data: CellInfo) {
-        recentExhibitionImageView.image = UIImage(named: data.url)
+    func bind(data: AllCategories) {
+        recentExhibitionImageView.kf.setImage(with: URL(string: data.imageUrl))
         exhibitionName.text = data.title
         exhibitionDate.text = "\(data.startDate) ~ \(data.endDate)"
-        exhibitionCity.text = "\(data.city)，\(data.township)"
-        exhibitionPrice.text = data.price
+        exhibitionCity.text = "\(data.showInfo.first?.locationName ?? "")，\(data.showInfo.first?.location ?? "")"
+//        exhibitionPrice.text = data.price
+        
+        backView.rx
+            .tapGesture()
+            .when(.recognized)
+            .subscribe(onNext: { [weak self] _ in
+                self?.cellDelegate?.pushToExhibitionDetail(category: data)
+            })
+            .disposed(by: disposeBag)
     }
 }

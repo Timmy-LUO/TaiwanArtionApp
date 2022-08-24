@@ -79,7 +79,7 @@ class SearchResultViewController: UIViewController {
 }
 
 extension SearchResultViewController: SearchResultCellDelegate {
-    func pushToExhibitionDetail() {
+    func pushToExhibitionDetail(category: AllCategories) {
         let vc = ExhibitionDetailViewController()
         navigationController?.pushViewController(vc, animated: true)
     }

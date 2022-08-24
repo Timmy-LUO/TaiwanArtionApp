@@ -13,8 +13,10 @@ class FindExhibitionTableView: UITableView {
     weak var buttonDelegate: TableViewCellDelegate?
     weak var cellDelegate: SearchResultCellDelegate?
     
+    weak var viewModel: FindExhibitionViewModelType?
+    
     private var scrollPhotoList = [ScrollPhoto]()
-    private var cellInfo = [CellInfo]()
+    private var cellInfo = [AllCategories]()
     
     // MARK: - Init
     convenience init() {
@@ -43,7 +45,7 @@ class FindExhibitionTableView: UITableView {
         reloadData()
     }
     
-    func setCellInfo(list: [CellInfo]) {
+    func setCellInfo(list: [AllCategories]) {
         cellInfo = list
         reloadData()
     }

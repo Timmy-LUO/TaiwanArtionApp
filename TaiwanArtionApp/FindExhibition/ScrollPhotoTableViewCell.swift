@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Kingfisher
 
 class ScrollPhotoTableViewCell: UITableViewCell {
     
@@ -179,13 +180,16 @@ class ScrollPhotoTableViewCell: UITableViewCell {
         data.map { $0.url }.forEach { [weak self] url in
             self?.createPhoto(url: url)
         }
-        let scrollPhoto = data[0]
-        exhibitionNameLabel.text = scrollPhoto.title
-        exhibitionDateLabel.text = "\(scrollPhoto.startDate) ~ \(scrollPhoto.endDate)"
+        print("RUN")
+        if !data.isEmpty {
+            let scrollPhoto = data[0]
+            exhibitionNameLabel.text = scrollPhoto.title
+            exhibitionDateLabel.text = "\(scrollPhoto.startDate) ~ \(scrollPhoto.endDate)"
+        }
     }
     
     private func createPhoto(url: String) {
-        let imageView = UIImageView(image: UIImage(named: url))
+        let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         scrollViewContainer.addArrangedSubview(imageView)
         imageView.snp.makeConstraints { make in
@@ -193,6 +197,8 @@ class ScrollPhotoTableViewCell: UITableViewCell {
             make.bottom.equalTo(photoScrollView.snp.bottom)
             make.width.equalTo(photoScrollView.snp.width)
         }
+        imageView.kf
+            .setImage(with: URL(string: url))
     }
 }
 

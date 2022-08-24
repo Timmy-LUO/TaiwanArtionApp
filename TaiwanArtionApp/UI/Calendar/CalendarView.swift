@@ -30,7 +30,8 @@ class CalendarView: UIView {
     // MARK: - UIs
     private let calendar: JTACMonthView = {
         let calendar = JTACMonthView()
-        calendar.register(DateCell.self, forCellWithReuseIdentifier: DateCell.identifier)
+        calendar.register(DateCell.self,
+                          forCellWithReuseIdentifier: DateCell.identifier)
         calendar.register(DateHeader.self,
                           forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                           withReuseIdentifier: DateHeader.identifier)
@@ -42,7 +43,6 @@ class CalendarView: UIView {
         calendar.scrollDirection = .horizontal
         calendar.minimumLineSpacing = 0
         calendar.minimumInteritemSpacing = 0
-//        calendar.rangeSelectionMode = .continuous
         return calendar
     }()
     
@@ -81,9 +81,8 @@ class CalendarView: UIView {
     private func handleCellSelected(cell: DateCell, cellState: CellState) {
         
         if cellState.isSelected {
-//            cell.selectedView.layer.cornerRadius =  20
-            cell.dateLabel.textColor = .white
             cell.selectedView.isHidden = false
+            cell.dateLabel.textColor = .white
         } else {
             cell.selectedView.isHidden = true
         }

@@ -8,7 +8,7 @@
 import UIKit
 
 protocol SearchResultCellDelegate: AnyObject {
-    func pushToExhibitionDetail()
+    func pushToExhibitionDetail(category: AllCategories)
 }
 
 class SearchResultTableView: UITableView {
