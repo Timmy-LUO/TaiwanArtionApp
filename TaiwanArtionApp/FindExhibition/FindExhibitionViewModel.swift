@@ -96,11 +96,12 @@ final class FindExhibitionViewModel:
                         )
                     )
                     
-                    if let lat = category.showInfo.first?.latitude, let lon = category.showInfo.first?.longitude {
+                    if let lat = category.showInfo.first?.latitude,
+                       let lon = category.showInfo.first?.longitude {
                         self.getCityName(lat: Double(lat)!, lon: Double(lon)!)
                     }
                 }
-//                scrollPhotoList.accept(scrollPhotos)
+                scrollPhotoList.accept(scrollPhotos)
                 cellInfoList.accept(categories)
                 
             })
@@ -112,7 +113,7 @@ final class FindExhibitionViewModel:
         geoCoder.reverseGeocodeLocation(CLLocation(latitude: lat , longitude: lon)) { (placemarks: [CLPlacemark]?, error: Error?) in
 //           (placemarks:[AnyObject]!, error: NSError!) -> Void in
            if error != nil{
-              print(error)
+//              print(error)
               return
            }
 
@@ -129,7 +130,7 @@ final class FindExhibitionViewModel:
               //這邊拼湊轉回來的地址
               //placemark.name
                
-               print("\(placemark.locality) \(placemark.country)")
+//               print("\(placemark.locality) \(placemark.country)")
            }
         }
     }

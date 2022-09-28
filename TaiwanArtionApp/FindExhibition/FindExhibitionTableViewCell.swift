@@ -30,7 +30,7 @@ class FindExhibitionTableViewCell: UITableViewCell {
     }()
     
     private let recentExhibitionImageView: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "3"))
+        let imageView = UIImageView()
         imageView.backgroundColor = .white
         imageView.layer.cornerRadius = 23
         imageView.clipsToBounds = true
@@ -123,11 +123,10 @@ class FindExhibitionTableViewCell: UITableViewCell {
             make.bottom.trailing.equalTo(-10)
         }
         
-        let width = UIScreen.main.bounds.width - 283
-        let height = width / 107 * 87
-        
         backView.addSubview(recentExhibitionImageView)
         recentExhibitionImageView.snp.makeConstraints { make in
+            let width = UIScreen.main.bounds.width - 283
+            let height = width / 107 * 87
             make.height.equalTo(height)
             make.width.equalTo(width)
             make.top.equalTo(16)

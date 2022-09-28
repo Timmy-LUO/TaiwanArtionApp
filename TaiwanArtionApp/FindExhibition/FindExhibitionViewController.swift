@@ -18,6 +18,7 @@ class FindExhibitionViewController: UIViewController {
     
     
     // MARK: - UIs
+    private let changePhotoTableVIew = ChangePhotoTableView()
     private let tableView = FindExhibitionTableView()
     private let sideMenu = UISideMenuNavigationController(rootViewController: SideMenuViewController())
     
@@ -37,12 +38,12 @@ class FindExhibitionViewController: UIViewController {
         tableView.buttonDelegate = self
         tableView.cellDelegate = self
         tableView.viewModel = viewModel
+        
         setupUI()
         setupSideMenu()
         setupNavigation()
         setupBinding()
         viewModel.inputs.viewDidLoad.accept(())
-        
     }
     
     // MARK: - Set SideMenu
@@ -109,7 +110,7 @@ class FindExhibitionViewController: UIViewController {
 
 extension FindExhibitionViewController: TableViewCellDelegate {
     func didButtonPressed() {
-        let vc = SeeAllExhibitionViewController(viewModel: SeeAllExhibitionViewModel())
+        let vc = SeeAllExhibitionViewController(viewModel: FindExhibitionViewModel())
         navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -117,7 +118,7 @@ extension FindExhibitionViewController: TableViewCellDelegate {
 extension FindExhibitionViewController: SearchResultCellDelegate {
     func pushToExhibitionDetail(category: AllCategories) {
         print("category: \(category)")
-//        let vc = ExhibitionDetailViewController()
-//        navigationController?.pushViewController(vc, animated: true)
+        let vc = ExhibitionDetailViewController(data: category)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

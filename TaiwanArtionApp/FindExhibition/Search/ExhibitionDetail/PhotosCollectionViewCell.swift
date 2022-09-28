@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Kingfisher
 
 class PhotosCollectionViewCell: UICollectionViewCell {
     
@@ -14,7 +15,7 @@ class PhotosCollectionViewCell: UICollectionViewCell {
     
     //MARK: - UIs
     private let photoColumnImageView: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "2"))
+        let imageView = UIImageView(image: UIImage(named: "3"))
         return imageView
     }()
     
@@ -27,8 +28,16 @@ class PhotosCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Bind
+//    func bind(data: AllCategories) {
+//        photoColumnImageView.kf.setImage(with: URL(string: data.imageUrl))
+//        print("PhotosCollection: \(data.imageUrl)")
+//    }
+    
     // MARK: - Setup UI
     private func setupUI() {
+        layer.borderColor = UIColor.black.cgColor
+        
         contentView.addSubview(photoColumnImageView)
         photoColumnImageView.snp.makeConstraints { make in
             make.centerY.equalTo(self.snp.centerY)

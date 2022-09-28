@@ -34,7 +34,7 @@ class DateViewController: UIViewController {
     
     @objc
     private func confirm() {
-        let vc = SearchResultViewController(viewModel: SearchResultViewModel())
+        let vc = SearchResultViewController(viewModel: FindExhibitionViewModel())
         navigationController?.pushViewController(vc, animated: true)
     }
     

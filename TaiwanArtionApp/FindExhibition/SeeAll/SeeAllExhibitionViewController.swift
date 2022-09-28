@@ -11,14 +11,15 @@ import RxSwift
 
 class SeeAllExhibitionViewController: UIViewController {
     
-    private let viewModel: SeeAllExhibitionViewModelType
+//    private let viewModel: FindExhibitionViewModelType
+    weak var viewModel: FindExhibitionViewModelType!
     private let disposeBag = DisposeBag()
     
     // MARK: - UIs
     private let filterButton = FilterExhibitionButton()
     private let tableView = SeeAllExhibitionTableView()
     
-    init(viewModel: SeeAllExhibitionViewModel) {
+    init(viewModel: FindExhibitionViewModelType) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -70,7 +71,7 @@ class SeeAllExhibitionViewController: UIViewController {
         viewModel.outputs
             .cellInfoList
             .emit(onNext: { [weak self] info in
-//                self?.tableView.setCellInfo(list: info)
+                self?.tableView.setCellInfo(list: info)
             })
             .disposed(by: disposeBag)
     }
@@ -84,7 +85,7 @@ class SeeAllExhibitionViewController: UIViewController {
 
 extension SeeAllExhibitionViewController: SearchResultCellDelegate {
     func pushToExhibitionDetail(category: AllCategories) {
-        let vc = ExhibitionDetailViewController()
+        let vc = ExhibitionDetailViewController(data: category)
         navigationController?.pushViewController(vc, animated: true)
     }
 }

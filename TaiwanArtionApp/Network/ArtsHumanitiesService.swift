@@ -11,8 +11,8 @@ import RxSwift
 class ArtsHumanitiesService {
     
     static func getData() -> Observable<[ArtsHumanities]> {
-        let url: String = "https://memory.culture.tw/openapi/api/v1/json?subject=art"
         return Observable.create({ observer -> Disposable in
+            let url: String = "https://memory.culture.tw/openapi/api/v1/json?subject=art"
             AF.request(url, method: .get, encoding: JSONEncoding.default, headers: nil)
                 .response { response in
                     if response.response?.statusCode == 400 {

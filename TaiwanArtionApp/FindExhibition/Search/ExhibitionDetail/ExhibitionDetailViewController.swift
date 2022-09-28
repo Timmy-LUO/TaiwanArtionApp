@@ -7,10 +7,16 @@
 
 import UIKit
 import SnapKit
+import RxSwift
 
 class ExhibitionDetailViewController: UIViewController {
     
     // MARK: - Properties
+//    private let viewModel: FindExhibitionViewModelType
+    private let data: AllCategories
+    private var disposeBag = DisposeBag()
+    private var allCategories = [AllCategories]()
+    
     private let pages = ["展覽資訊", "票價", "展覽介紹"]
     
     private var pageViewIndex: Int = 0
@@ -107,6 +113,16 @@ class ExhibitionDetailViewController: UIViewController {
         return view
     }()
     
+    // MARK: - Init
+    init(data: AllCategories ) {
+        self.data = data
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -115,8 +131,18 @@ class ExhibitionDetailViewController: UIViewController {
         setupNavigation()
         setupCollectionView()
         configurePageViewController()
+        print("Detail: \(data)")
 //        backScrollView.delegate = self
     }
+    
+//    func setupBinding() {
+//        viewModel.outputs
+//            .cellInfoList
+//            .emit(onNext: { [weak self] list in
+//                self?.photosCollectionView.setCellInfo(list: list)
+//            })
+//            .disposed(by: disposeBag)
+//    }
     
     private func setupNavigation() {
         // left Button

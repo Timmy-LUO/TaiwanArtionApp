@@ -9,6 +9,8 @@ import UIKit
 
 class PhotosCollectionView: UICollectionView {
     
+    private var allCategories = [AllCategories]()
+    
     // MARK: - Init
     convenience init() {
         let layout = UICollectionViewFlowLayout()
@@ -30,17 +32,22 @@ class PhotosCollectionView: UICollectionView {
     required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    func setCellInfo(list: [AllCategories]) {
+        allCategories = list
+        reloadData()
+    }
 }
 
 //MARK: - Data Source
 extension PhotosCollectionView: UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 5 //allCategories.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotosCollectionViewCell.identifier, for: indexPath) as! PhotosCollectionViewCell
-        
+//        cell.bind(data: allCategories[indexPath.row])
         return cell
     }
 }

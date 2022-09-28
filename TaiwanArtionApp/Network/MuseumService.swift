@@ -11,8 +11,8 @@ import RxSwift
 class MuseumService {
     
     func getData() -> Observable<[Museum]> {
-        let url: String = "https://cloud.culture.tw/frontsite/trans/emapOpenDataAction.do?method=exportEmapJson&typeId=H"
         return Observable.create({ observer -> Disposable in
+            let url: String = "https://cloud.culture.tw/frontsite/trans/emapOpenDataAction.do?method=exportEmapJson&typeId=H"
             AF.request(url, method: .get, encoding: JSONEncoding.default, headers: nil)
                 .response { response in
                     if response.response?.statusCode == 400 {

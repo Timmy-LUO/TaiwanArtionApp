@@ -88,13 +88,4 @@ extension FindExhibitionTableView: UITableViewDataSource {
 // MARK: - TableView Delegate
 extension FindExhibitionTableView: UITableViewDelegate {
     
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        if indexPath.section == 0 {
-//            return UITableView.automaticDimension
-//        } else if indexPath.section == 1 {
-//            return UITableView.automaticDimension
-//        } else {
-//            return UITableView.automaticDimension
-//        }
-//    }
 }

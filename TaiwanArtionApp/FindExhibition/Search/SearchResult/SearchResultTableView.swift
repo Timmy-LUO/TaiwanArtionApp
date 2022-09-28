@@ -14,7 +14,7 @@ protocol SearchResultCellDelegate: AnyObject {
 class SearchResultTableView: UITableView {
     
     // MARK: - Properties
-    var cellInfo = [CellInfo]()
+    var cellInfo = [AllCategories]()
     weak var cellDelegate: SearchResultCellDelegate?
     
     
@@ -39,7 +39,7 @@ class SearchResultTableView: UITableView {
     }
     
     // MARK: - Set CellInfo
-    func setCellInfo(list: [CellInfo]) {
+    func setCellInfo(list: [AllCategories]) {
         cellInfo = list
         reloadData()
     }

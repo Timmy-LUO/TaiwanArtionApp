@@ -12,7 +12,8 @@ import RxSwift
 class SearchResultViewController: UIViewController {
     
     // MARK: - Properties
-    private let viewModel: SearchResultViewModelType
+    weak var viewModel: FindExhibitionViewModelType!
+//    private let viewModel: SearchResultViewModelType
     private let disposeBag = DisposeBag()
 
     
@@ -20,7 +21,7 @@ class SearchResultViewController: UIViewController {
     private let tableView = SearchResultTableView()
     
     
-    init(viewModel: SearchResultViewModelType) {
+    init(viewModel: FindExhibitionViewModelType) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -80,7 +81,8 @@ class SearchResultViewController: UIViewController {
 
 extension SearchResultViewController: SearchResultCellDelegate {
     func pushToExhibitionDetail(category: AllCategories) {
-        let vc = ExhibitionDetailViewController()
+        print("Search Result: \(category)")
+        let vc = ExhibitionDetailViewController(data: category)
         navigationController?.pushViewController(vc, animated: true)
     }
 }

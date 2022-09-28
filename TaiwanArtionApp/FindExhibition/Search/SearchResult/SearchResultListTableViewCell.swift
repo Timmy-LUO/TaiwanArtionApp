@@ -7,12 +7,16 @@
 
 import UIKit
 import SnapKit
+import Kingfisher
+import RxGesture
+import RxSwift
 
 class SearchResultListTableViewCell: UITableViewCell {
 
     static let identifier = "SearchResultCell"
     
     weak var cellDelegate: SearchResultCellDelegate?
+    private var disposeBag = DisposeBag()
         
     // MARK: - UIs
     private let backView: UIView = {
@@ -87,7 +91,7 @@ class SearchResultListTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupUI()
-        viewTap()
+//        viewTap()
     }
     
     required init?(coder: NSCoder) {
@@ -95,17 +99,17 @@ class SearchResultListTableViewCell: UITableViewCell {
     }
     
     // MARK: - Methods
-    private func viewTap() {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(touch))
-        tap.numberOfTapsRequired = 1
-        tap.numberOfTouchesRequired = 1
-        backView.addGestureRecognizer(tap)
-    }
+//    private func viewTap() {
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(touch))
+//        tap.numberOfTapsRequired = 1
+//        tap.numberOfTouchesRequired = 1
+//        backView.addGestureRecognizer(tap)
+//    }
     
-    @objc
-    private func touch() {
+//    @objc
+//    private func touch() {
 //        cellDelegate?.pushToExhibitionDetail()
-    }
+//    }
     
     // MARK: - Setup UI
     private func setupUI() {
@@ -119,11 +123,10 @@ class SearchResultListTableViewCell: UITableViewCell {
             make.trailing.equalTo(-16)
         }
         
-        let width = UIScreen.main.bounds.width - 64
-        let height = width / 326 * 169
-        
         backView.addSubview(exhibitionImageView)
         exhibitionImageView.snp.makeConstraints { make in
+            let width = UIScreen.main.bounds.width - 64
+            let height = width / 326 * 169
             make.height.equalTo(height)
 //            make.width.equalTo(width)
             make.top.equalTo(18)
@@ -166,11 +169,21 @@ class SearchResultListTableViewCell: UITableViewCell {
         }
     }
     
-    func bind(data: CellInfo) {
-        exhibitionImageView.image = UIImage(named: data.url)
+    // MARK: - Bind
+    func bind(data: AllCategories) {
+        exhibitionImageView.kf.setImage(with: URL(string: data.imageUrl))
         exhibitionName.text = data.title
         exhibitionDate.text = "\(data.startDate) ~ \(data.endDate)"
-        exhibitionCity.text = "\(data.city)，\(data.township)"
-        exhibitionPrice.text = data.price
+        exhibitionCity.text = "\(data.showInfo.first?.locationName ?? "")，\(data.showInfo.first?.location ?? "")"
+//        exhibitionPrice.text = data.price
+
+//        backView.rx
+//            .tapGesture()
+//            .when(.recognized)
+//            .subscribe(onNext: { [weak self] _ in
+//                self?.cellDelegate?.pushToExhibitionDetail(category: data)
+//                print("Search Result Cell: \(data)")
+//            })
+//            .disposed(by: disposeBag)
     }
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		56092EC0312BB3CD89DBB5B9 /* Pods_TaiwanArtionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B1244207B5A59DCC7FA72 /* Pods_TaiwanArtionApp.framework */; };
+		624F940828B7459600A734A2 /* ChangePhotoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624F940728B7459600A734A2 /* ChangePhotoTableView.swift */; };
+		624F940A28B745B200A734A2 /* ChangePhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624F940928B745B200A734A2 /* ChangePhotoTableViewCell.swift */; };
 		626C31B128A48F7F005A3190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31B028A48F7F005A3190 /* AppDelegate.swift */; };
 		626C31B328A48F7F005A3190 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C31B228A48F7F005A3190 /* SceneDelegate.swift */; };
 		626C31BB28A48F7F005A3190 /* TaiwanArtionApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 626C31B928A48F7F005A3190 /* TaiwanArtionApp.xcdatamodeld */; };
@@ -79,6 +81,8 @@
 
 /* Begin PBXFileReference section */
 		4F0B1244207B5A59DCC7FA72 /* Pods_TaiwanArtionApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaiwanArtionApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		624F940728B7459600A734A2 /* ChangePhotoTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePhotoTableView.swift; sourceTree = "<group>"; };
+		624F940928B745B200A734A2 /* ChangePhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePhotoTableViewCell.swift; sourceTree = "<group>"; };
 		626C31AD28A48F7F005A3190 /* TaiwanArtionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaiwanArtionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		626C31B028A48F7F005A3190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		626C31B228A48F7F005A3190 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +177,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		624F940628B744CF00A734A2 /* ChangePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				624F940728B7459600A734A2 /* ChangePhotoTableView.swift */,
+				624F940928B745B200A734A2 /* ChangePhotoTableViewCell.swift */,
+			);
+			path = ChangePhoto;
+			sourceTree = "<group>";
+		};
 		626C31A428A48F7F005A3190 = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +272,7 @@
 		626C31D328A492E8005A3190 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				624F940628B744CF00A734A2 /* ChangePhoto */,
 				626C31D428A4D53B005A3190 /* SearchBar */,
 				626C31EE28A4DCAC005A3190 /* WhetherStartExhibitionButton */,
 				626C31F128A4DCE8005A3190 /* FilterButtons */,
@@ -649,6 +663,7 @@
 				626C31C928A49101005A3190 /* FindExhibitionViewController.swift in Sources */,
 				626C325328A4F892005A3190 /* IntroduceViewController.swift in Sources */,
 				626DC06F28B346C2008EC37F /* AllCategories.swift in Sources */,
+				624F940828B7459600A734A2 /* ChangePhotoTableView.swift in Sources */,
 				626C320728A4DF4F005A3190 /* SouthAreaButtons.swift in Sources */,
 				626C31DF28A4D968005A3190 /* NearbyExhibitionViewController.swift in Sources */,
 				626C31B128A48F7F005A3190 /* AppDelegate.swift in Sources */,
@@ -698,6 +713,7 @@
 				626C31FD28A4DE22005A3190 /* FilterExhibitionButtonsCell.swift in Sources */,
 				626C31FF28A4DE5C005A3190 /* NorthAreaButtons.swift in Sources */,
 				626DC07328B35B34008EC37F /* MuseumService.swift in Sources */,
+				624F940A28B745B200A734A2 /* ChangePhotoTableViewCell.swift in Sources */,
 				626C31D828A4D69B005A3190 /* SearchResultTableViewCell.swift in Sources */,
 				626C31E228A4D992005A3190 /* ShareExhibitionViewController.swift in Sources */,
 				626C324428A4F658005A3190 /* SearchResultListTableViewCell.swift in Sources */,

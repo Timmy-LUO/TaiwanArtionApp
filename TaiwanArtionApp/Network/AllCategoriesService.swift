@@ -11,8 +11,8 @@ import RxSwift
 class AllCategoriesService {
     
     static func getData() -> Observable<[AllCategories]> {
-        let url: String = "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=all"
         return Observable.create({ observer -> Disposable in
+            let url: String = "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=all"
             AF.request(url, method: .get, encoding: JSONEncoding.default, headers: nil)
                 .response { response in
                     if response.response?.statusCode == 400 {
